@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>book mark</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 style=" text-align: center; margin-bottom: 40px;">Book Store</h1>
+  <div class="container d-flex gap-5">
+    <table class="table border ">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Type</th>
+          <th scope="col">Author</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+    <div>
+      <select id="select" class="form-select">
+        <option selected value="Hammasi">Hammasi</option>
+        <option value="Badiy">Badiy</option>
+        <option value="She'r">She'r</option>
+        <option value="Ilmiy">Ilmiy</option>
+        <option value="Diniy">Diniy</option>
+      </select>
+      <br><br>
+      <form class="col" id="form">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleInputName" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputType" class="form-label">Type</label>
+          <input type="text" class="form-control" id="exampleInputType" required list="data">
+          <datalist id="data">
+            <option value="Badiy">Badiy</option>
+            <option value="She'r">She'r</option>
+            <option value="Ilmiy">Ilmiy</option>
+            <option value="Diniy">Diniy</option>
+          </datalist>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputAuthor" class="form-label">Author</label>
+          <input type="text" class="form-control" id="exampleInputAuthor" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+    </div>
+
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
